@@ -4,6 +4,7 @@
 :root {
     --horizontal-gap: 5%;
     --nav-height: 60px;
+    --color-primary: #00A170;
 }
 
 /* reset default styles  */
@@ -18,11 +19,14 @@ button {
     border: none;
     background: none;
 }
-button:focus{
+
+button:focus {
     outline: none;
 }
+
 a {
     text-decoration: none;
+    color: black;
 }
 
 body {

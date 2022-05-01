@@ -16,7 +16,7 @@ export default function Navbar() {
   };
   return (
     <nav className={styles["nav"]}>
-      <NavLink to="/" activeclassname="selected">
+      <NavLink to="/" className={ isActive => isActive? styles["nav__selected"] : ""}>
         HOME
       </NavLink>
       <div>

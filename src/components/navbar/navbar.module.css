@@ -1,29 +1,36 @@
 @import 'app.css';
 
 .nav {
-    position: fixed !important;
+    position: fixed;
     top: 0;
     left: 0;
-    padding: 10px var(--horizontal-gap);
+    padding: 5px var(--horizontal-gap);
     height: var(--nav-height);
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    font-weight: 500;
+    font-weight: 600;
     z-index: 99;
+    background: white;
+    border-bottom: solid 1px var(--color-primary);
 }
 
 .nav__cart-count {
     display: inline-block;
     transform: translate(-10px, -16px);
+    margin-top: 16px;
     width: 20px;
     height: 20px;
     line-height: 20px;
     font-size: 12px;
     font-weight: bold;
-    background-color: black;
+    background-color: var(--color-primary);
     color: white;
     text-align: center;
     border-radius: 50%;
+}
+
+.nav__selected{
+    color: var(--color-primary);
 }
