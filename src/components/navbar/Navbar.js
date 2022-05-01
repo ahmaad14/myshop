@@ -16,7 +16,10 @@ export default function Navbar() {
   };
   return (
     <nav className={styles["nav"]}>
-      <NavLink to="/" className={ isActive => isActive? styles["nav__selected"] : ""}>
+      <NavLink
+        to="/"
+        className={(isActive) => (isActive ? styles["nav__selected"] : "")}
+      >
         HOME
       </NavLink>
       <div>
@@ -29,7 +32,7 @@ export default function Navbar() {
       </div>
       {showCart && (
         <Overlay onClose={handleCartClose}>
-          <Cart />
+          <Cart mini={true} />
         </Overlay>
       )}
     </nav>

@@ -1,8 +1,9 @@
 import React from "react";
-import { createPortal } from "react-dom"
+import { createPortal } from "react-dom";
 import styles from "./overlay.module.css";
 export default function Overlay({ onClose, children, centerContent = false }) {
   const handleContentClick = (event) => {
+    if (event.target.href) return;
     event.stopPropagation();
   };
   return createPortal(

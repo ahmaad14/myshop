@@ -1,0 +1,81 @@
+@import 'app.css';
+
+.cart {
+    padding: 2em 0.5em;
+}
+
+.cart.mini {
+    font-size: 10px;
+}
+
+.cart-empty {
+    font-size: 24px;
+    margin: 30px;
+    text-align: center;
+}
+
+.cart-title {
+    font-size: 2em;
+    padding: 0.5em;
+}
+
+.cart__summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+.cart__summary a {
+    display: inline-block;
+    background: var(--color-primary);
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    border-bottom: 1px solid rgb(199, 195, 195);
+}
+
+.item img {
+    height: 10em;
+    max-width: 10em;
+    object-fit: contain;
+}
+
+.item__info {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin: 0 20px;
+}
+
+.item__count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 4em;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.item__count button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    margin: 10px 0;
+    color: white;
+    font-size: 24px;
+}
