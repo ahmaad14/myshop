@@ -1,0 +1,29 @@
+@import 'app.css';
+
+.nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    padding: 10px var(--horizontal-gap);
+    height: var(--nav-height);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    z-index: 99;
+}
+
+.nav__cart-count {
+    display: inline-block;
+    transform: translate(-10px, -16px);
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+}
