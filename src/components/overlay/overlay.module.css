@@ -3,28 +3,27 @@
 .overlay {
     position: fixed;
     display: flex;
+    justify-content: center;
     top: 0;
     left: 0;
     padding: 0 var(--horizontal-gap);
     height: 100vh;
     width: 100vw;
-    background-color: black;
-    opacity: 0.5;
+    background-color: rgba(0,0,0,0.5);
     cursor: pointer;
-    z-index: -1;
 }
 
 .overlay__content {
     position: absolute;
     background-color: white;
-    max-width: 100%;
+    width: fit-content;
+    max-width: 90vw;
     max-height: 80vh;
     overflow-y: auto;
     overflow-x: hidden;
     margin: auto;
     top: var(--nav-height);
     right: var(--horizontal-gap);
-    left: var(--horizontal-gap);
 }
 
 .overlay__content.center {

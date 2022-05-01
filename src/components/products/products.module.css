@@ -7,7 +7,6 @@
 
 .card {
     width: 300px;
-    height: 400px;
     padding: 20px;
     margin: 20px;
     cursor: pointer;
@@ -21,22 +20,25 @@
     filter: drop-shadow(0px 4px 35px rgba(168, 172, 176, 0.19));
     transform: scale(1.1);
 }
+
 .card img {
     display: block;
     margin: 0 auto;
-    margin-top: auto;;
+    margin-top: auto;
+    ;
     max-width: 100%;
-    height: 60%;
+    height: 200px;
     object-fit: contain;
 }
 
 .card__title {
+    font-size: 20px;
     font-weight: 500;
     margin: 20px 0 5px;
 }
 
-.card__add-btn{
-    margin: 20px auto; 
+.card__add-btn {
+    margin: 20px auto 0;
     width: 100%;
     height: 40px;
     font-size: 15px;
@@ -46,3 +48,62 @@
     font-weight: 600;
 }
 
+.modal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.modal__slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    min-height: 400px;
+}
+
+.modal__slider img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.modal__slider-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-weight: 600;
+    transform: translatey(-40px);
+}
+
+.modal__slider-actions button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2px 5px;
+    font-size: 20px;
+}
+
+.modal__details {
+    padding: 1%;
+    width: 50%;
+    line-height: 30px;
+}
+
+.modal__price {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 960px) {
+    .modal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal__slider,
+    .modal__details {
+        width: 100%;
+    }
+}
