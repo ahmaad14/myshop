@@ -17,6 +17,7 @@ const cartSlice = createSlice({
         ...item,
       };
       state.count += 1;
+      state.total += item.price;
     },
   },
 });
