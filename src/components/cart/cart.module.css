@@ -18,7 +18,7 @@
     font-size: 2em;
     padding: 0.5em;
 }
-.cart__list{
+.mini .cart__list{
     height: 300px;
     overflow-y: auto;
 }
