@@ -5,7 +5,7 @@ import styles from "./products.module.css";
 export default function Products() {
   const [currentPage, setCurrentPage] = useState(0);
   const itemsPerpage = 4;
-  const pagesCount = Math.round(data.products.length / itemsPerpage);
+  const pagesCount = Math.ceil(data.products.length / itemsPerpage);
 
   const getPage = (pageNum) => {
     const startIndex = pageNum * itemsPerpage;
@@ -46,9 +46,7 @@ export default function Products() {
                 {page + 1}
               </button>
             );
-            else
-              return null
-       
+          else return null;
         })}
 
         {currentPage + 2 < pagesCount ? (
