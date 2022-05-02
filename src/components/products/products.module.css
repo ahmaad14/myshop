@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    height: 100%;
 }
 
 .card {
@@ -94,6 +95,27 @@
     margin: 10px 0;
     font-size: 20px;
     font-weight: bold;
+}
+
+.pagination {
+    margin: auto;
+    width: fit-content;
+    bottom: 20;
+}
+
+.pagination button {
+    min-width: 30px;
+    height: 30px;
+    padding: 2px;
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+    background: var(--color-primary);
+    border-radius: 50%;
+}
+
+.pagination .selected {
+    background: black;
 }
 
 @media (max-width: 960px) {
