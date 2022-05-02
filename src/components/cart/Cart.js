@@ -11,18 +11,18 @@ export default function Cart({ mini = false }) {
 
   return (
     <div className={`${styles.cart} ${mini ? styles["mini"] : ""} `}>
-      <p className={styles["cart-title"]}>Cart</p>
-      {Object.values(cart.items).map((item) => (
-        <CartItem key={item.id} item={item} />
-      ))}
-
+      <p className={styles["cart__title"]}>Cart</p>
+      <div className={styles["cart__list"]}>
+        {Object.values(cart.items).map((item) => (
+          <CartItem key={item.id} item={item} />
+        ))}
+      </div>
       <div className={styles["cart__summary"]}>
         <p>
           Items Count: {cart.count}
           <br />
           Total: {cart.total}
         </p>
-
         {mini && (
           <Link className={styles["cart__checkout"]} to="/cart">
             Checkout

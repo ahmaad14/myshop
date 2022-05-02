@@ -14,22 +14,26 @@
     text-align: center;
 }
 
-.cart-title {
+.cart__title {
     font-size: 2em;
     padding: 0.5em;
+}
+.cart__list{
+    height: 300px;
+    overflow-y: auto;
 }
 
 .cart__summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 1.2em;
     line-height: 1.5em;
     font-weight: bold;
 }
 
-.cart__summary a {
+.cart__checkout {
     display: inline-block;
     background: var(--color-primary);
     color: white;
