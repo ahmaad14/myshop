@@ -14,7 +14,7 @@
 - Overlay mini-cart. 
 - Cart Page. 
 - Increase/decrease item count in cart. 
-- Responsive design using.
+- Responsive design.
 
 ## How to Run
 
