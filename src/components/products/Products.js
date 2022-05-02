@@ -2,25 +2,32 @@ import { useState } from "react";
 import data from "data/db.json";
 import ProductCard from "./ProductCard";
 import styles from "./products.module.css";
+
+const itemsPerpage = 4;
+const pagesCount = Math.ceil(data.products.length / itemsPerpage);
+
 export default function Products() {
   const [currentPage, setCurrentPage] = useState(0);
-  const itemsPerpage = 4;
-  const pagesCount = Math.ceil(data.products.length / itemsPerpage);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const getPage = (pageNum) => {
     const startIndex = pageNum * itemsPerpage;
     return data.products.slice(startIndex, startIndex + itemsPerpage);
   };
-
   const handlePageChange = (page) => {
     setCurrentPage(page);
+    setCurrentIndex(page * itemsPerpage);
   };
 
   return (
     <>
       <div className={styles["products-list"]}>
         {getPage(currentPage).map((product, index) => (
-          <ProductCard key={index} id={index} product={product} />
+          <ProductCard
+            key={currentIndex + index}
+            id={currentIndex + index}
+            product={product}
+          />
         ))}
       </div>
 
