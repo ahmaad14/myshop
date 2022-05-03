@@ -51,10 +51,15 @@
     border-bottom: 1px solid rgb(199, 195, 195);
 }
 
-.item img {
-    height: 10em;
-    max-width: 10em;
-    object-fit: contain;
+.item__img-wrapper {
+     width: 15em;
+     padding: 0.5em; 
+}
+
+.item__img-wrapper  img {
+    max-height: 10em;
+    max-width: 100%;
+    object-fit: contain;    
 }
 
 .item__info {

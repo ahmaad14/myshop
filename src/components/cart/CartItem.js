@@ -13,7 +13,9 @@ export default function CartItem({ item }) {
   };
   return (
     <div className={styles["item"]}>
+      <div className={styles["item__img-wrapper"]}>
       <img src={item.featuredPhoto} alt={item.name} />
+      </div>
       <p className={styles["item__info"]}>
         <b> {item.name} </b> <br />${item.price}
       </p>
