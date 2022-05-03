@@ -123,9 +123,9 @@
         flex-direction: column;
         align-items: center;
     }
-
     .modal__slider,
     .modal__details {
         width: 100%;
+        max-width: 100%;
     }
 }
